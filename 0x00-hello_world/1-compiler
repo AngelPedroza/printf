@@ -1,3 +1,2 @@
 #!/bin/bash
 gcc -c $CFILE
-//this is an unintentional badly written comment

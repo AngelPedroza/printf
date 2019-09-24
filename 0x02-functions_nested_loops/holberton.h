@@ -61,3 +61,24 @@ int print_last_digit(int);
 void jack_bauer(void);
 
 #endif
+
+#ifndef TIMES_TABLE
+#define TIMES_TABLE
+
+void times_table(void);
+
+#endif
+
+#ifndef ADD
+#define ADD
+
+int add(int, int);
+
+#endif
+
+#ifndef PRINT_TO_98
+#define PRINT_TO_98
+
+void print_to_98(void);
+
+#endif

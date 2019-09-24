@@ -2,10 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_alphabet - writes holberton followed by a new line
- *
- * Return: On success 0
- * On error, -1 is returned, and errno is set appropriately.
+ * print_alphabet - prints the alphabet lowercase
  */
 void print_alphabet(void)
 {

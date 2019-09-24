@@ -1,3 +1,4 @@
+
 #ifndef _PUTCHAR
 #define _PUTCHAR
 
@@ -79,6 +80,6 @@ int add(int, int);
 #ifndef PRINT_TO_98
 #define PRINT_TO_98
 
-void print_to_98(void);
+void print_to_98(int n);
 
 #endif

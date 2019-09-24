@@ -14,10 +14,12 @@ int print_last_digit(int n)
 
 	if (retval < 0)
 	{
-		_putchar((retval * -1) + '0');
+		retval = retval * -1;
+		_putchar(retval + '0');
 	}
 	else
 	{
 		_putchar(retval + '0');
 	}
+	return(retval);
 }

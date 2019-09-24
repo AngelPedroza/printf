@@ -21,5 +21,5 @@ int print_last_digit(int n)
 	{
 		_putchar(retval + '0');
 	}
-	return(retval);
+	return (retval);
 }

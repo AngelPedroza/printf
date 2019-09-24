@@ -1,10 +1,7 @@
 #include "holberton.h"
-#include <stdio.h>
-
 
 /**
  * main - writes holberton followed by a new line
- * @c: The character to print
  *
  * Return: On success 0
  * On error, -1 is returned, and errno is set appropriately.

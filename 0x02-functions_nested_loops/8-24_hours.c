@@ -1,9 +1,7 @@
 #include "holberton.h"
 
-
 /**
- * print_alphabet_x10 - writes alphabet 10 times
- *
+ * jack_bauer -prnts every minute of the day
  *
  * Return: none
  * On error, -1 is returned, and errno is set appropriately.
@@ -11,19 +9,24 @@
 
 void jack_bauer(void)
 {
-	int i = 0;
+	int hours = 0;
+	int mins = 0; 
+      	//int mins = 0;
+	//int dm = mins / 10;
+	//int um = mins % 10;
 
-	while (i < 23)
+	for (hours = 0; hours <= 23; hours++)
 	{
-		int j = 0;
-
-		while (j < 60)
+		for (mins = 0; mins <= 59; mins++)
 		{
-			_putchar(j);
-			j++;
-		}
-		_putchar()
-		_putchar('\n');
-		i++;
+			_putchar((hours / 10) + '0');
+			_putchar((hours % 10) + '0');
+			_putchar(':');
+			_putchar((mins / 10) + '0');
+			_putchar((mins % 10) + '0');
+			_putchar('\n');
+		} 
 	}
+
+       
 }

@@ -2,23 +2,21 @@
 
 
 /**
- * _islower - checks for lowercase char
+ * _isalpha - checks for lowercase or upercase alpha char
  * @c: the character to check
  * Return: On lowercase 1
  * Otherwise 0.
  */
 
 
-int _islower(int c)
+int _isalpha(int c)
 {
-        int lastcase = 123;
-        int firstcase = 97;
-        if ((c >= firstcase) && (c <= lastcase))
-        {
-                return (1);
-        }
-        else
-        {
-                return (0);
-    
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 123))
+	{
+		return (1);
 	}
+	else
+	{
+		return (0);
+	}
+}

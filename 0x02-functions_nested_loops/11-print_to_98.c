@@ -4,7 +4,7 @@
 
 /**
  * print_to_98 - returns numbers fwd or bckwd to 98.
- *
+ * @n: the number to start from.
  */
 
 void print_to_98(int n)

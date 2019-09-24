@@ -55,3 +55,9 @@ int print_last_digit(int);
 
 #endif
 
+#ifndef JACK_BAUER
+#define JACK_BAUER
+
+void jack_bauer(void);
+
+#endif

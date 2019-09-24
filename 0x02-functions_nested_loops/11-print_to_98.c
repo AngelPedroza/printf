@@ -4,7 +4,6 @@
 
 /**
  * print_to_98 - returns numbers fwd or bckwd to 98.
- * @n: the number to check
  *
  */
 

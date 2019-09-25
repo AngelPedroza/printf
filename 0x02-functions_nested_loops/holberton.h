@@ -1,4 +1,3 @@
-
 #ifndef _PUTCHAR
 #define _PUTCHAR
 
@@ -81,5 +80,12 @@ int add(int, int);
 #define PRINT_TO_98
 
 void print_to_98(int n);
+
+#endif
+
+#ifndef PRINT_TIMES_TABLE
+#define PRINT_TIMES_TABLE
+
+void print_times_table(int n);
 
 #endif

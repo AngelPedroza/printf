@@ -10,12 +10,17 @@ void print_square(int n)
 {
 	int l, c;
 
-	for (l = 0; l < n; l++)
+	if (n <= 0)
+		putchar('\n');
+	else
 	{
-		for (c = 1; c <= n; c++)
+		for (l = 0; l < n; l++)
 		{
-			_putchar(35);
+			for (c = 1; c <= n; c++)
+			{
+				_putchar(35);
+			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }

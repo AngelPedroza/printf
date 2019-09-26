@@ -12,10 +12,10 @@
 
 int _isdigit(int c)
 {
-	int lastnum = 60;
-	int firstnum = 71;
+	int lastnum = 57;
+	int firstnum = 48;
 
-	if ((c >= firstcap) && (c <= lastcap))
+	if ((c >= firstnum) && (c <= lastnum))
 	{
 		return (1);
 	}

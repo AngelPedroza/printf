@@ -8,15 +8,23 @@
 
 void rev_string(char *s)
 {
-        int i = 0; //here we declare an iterator for the loop
-	char temp[] = //here we save the value of the parameter
+	int i;
+	int len;
+	int begp, endp;
+	char c;
 
-	while (*(s + i) != '\0') //here we iterate for find the last position
-		i++;
+	for (i = 0; s[i] != '\0'; i++)
+		len++;
+	begp = 0;
+	len -= 1;
+	endp = len;
 
-	while ((s + i) >= (s + 0)) //here we start in reverse
+	for (i = 0; i < len / 2; i++)
 	{
-		;
-		i--;
+		c = s[endp];
+		s[endp] = s[begp];
+		s[begp] = c;
+		begp++;
+		endp--;
 	}
 }

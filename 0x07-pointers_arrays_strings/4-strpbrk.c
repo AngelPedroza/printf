@@ -5,7 +5,7 @@
  *
  * @s: the string to evaluate
  * @accept: accepted characters.
- * return: pointer to the first ocurrence
+ * Return: pointer to the first ocurrence
  */
 
 char *_strpbrk(char *s, char *accept)

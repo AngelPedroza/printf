@@ -13,17 +13,19 @@ unsigned int _strspn(char *s, char *accept)
 
 	c = 0;
 	for (i = 0; s[i]; i++)
+	{
 		for (j = 0; accept[j]; j++)
 		{
 			if(s[i] == accept[j])
 			{
 				c++;
-				i++;
-			}
-			else
-			{
-				continue;
+			        break;
 			}
 		}
+		if (s[i] != accept[j])
+		{
+			break; 
+		}
+	}
 	return (c);
 }

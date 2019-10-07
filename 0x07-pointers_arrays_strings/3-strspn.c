@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
+ * _strspn - returns length (bytes) of substring of chars in acc
  *
- *
- *
- *
+ * @s: string to evaluate
+ * @accept: the characters accepted
+ * Return: llength in bytes
  */
 
 unsigned int _strspn(char *s, char *accept)
@@ -16,15 +17,15 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		for (j = 0; accept[j]; j++)
 		{
-			if(s[i] == accept[j])
+			if (s[i] == accept[j])
 			{
 				c++;
-			        break;
+				break;
 			}
 		}
 		if (s[i] != accept[j])
 		{
-			break; 
+			break;
 		}
 	}
 	return (c);

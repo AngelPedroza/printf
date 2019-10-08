@@ -21,7 +21,7 @@ void print_diagsums(int *a, int size)
 		sum1 += *(a + ((tam + 1) * i));
 
 	}
-	printf("%d ", sum1);
+	printf("%d, ", sum1);
 	for (i = 0; i < tam ; i++)
 	{
 		sum2 += *(a + ((tam - 1) * i) + tam - 1);

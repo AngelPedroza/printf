@@ -1,16 +1,10 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
- * _sqrt_recursion returns the root square of a number
- *
- * @n: the number to evaluate
- * return: the root sqrt of n | -1 if n doesn't have root sqrt
- *
- * _sqrtrep receives the int n as first parameter in order to perform recursion
+ * _sqrtrep - receives the int n as first parameter in order to perform recursio
  * @a: receives n as input
  * @b: the number to compare by itself to see if it's the sqrt
- *
+ * return: the square root | -1 if there are no sq
  */
 
 int _sqrtrep(int a, int b)
@@ -23,6 +17,13 @@ int _sqrtrep(int a, int b)
 	return (b = _sqrtrep(a, b + 1));
 
 }
+
+/**
+ * _sqrt_recursion - returns the square root of an integer
+ *
+ * @n: the integer to evaluate
+ * return: the square root
+ */
 
 int _sqrt_recursion(int n)
 {

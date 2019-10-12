@@ -2,10 +2,11 @@
 #include <stdio.h>
 
 /**
+ * main - returns the name of the executable
  *
- *
- *
- *
+ * @argc: the number of arguments received
+ * @argv: the array the contains the values of the arguments
+ * Return: 0 if program execs correcttly
  */
 
 int main(int argc, char *argv[])

@@ -16,28 +16,27 @@ int main(int argc, char *argv[])
 
 	int i, coins, cents[] = {25, 10, 5, 2, 1};
 
-	int change = atoi(argv[1]);
+	int change;
 
 	coins = 0;
 	i = 0;
 
 	if (argc == 2)
 	{
-		if (change < 0)
-			printf("0\n");
-		else
+		change = atoi(argv[argc -1]);
+		while (change > 0)
 		{
-			while (change > 0)
-			{
-				coins += change / cents[i];
-				change = change % cents[i];
-				if (change % cents[i] != 0)
-					i++;
-			}
-			printf("%d\n", coins);
-			return (0);
+			coins += change / cents[i];
+			change = change % cents[i];
+			if (change % cents[i] != 0)
+				i++;
 		}
+		printf("%d\n", coins);
+		return (0);
 	}
-	printf("Error\n");
-	return (1);
+	else
+	{
+		printf("Error\n");
+		return (1);
+	}
 }

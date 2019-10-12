@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
 	if (argc == 2)
 	{
-		change = atoi(argv[argc -1]);
+		change = atoi(argv[argc - 1]);
 		while (change > 0)
 		{
 			coins += change / cents[i];

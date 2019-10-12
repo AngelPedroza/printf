@@ -18,8 +18,11 @@ int main(int argc, char *argv[])
 
 	int change = atoi(argv[1]);
 
+	if (change < 0)
+		printf("0\n");
 	coins = 0;
 	i = 0;
+
 	if (argc == 2)
 	{
 		while (change > 0)

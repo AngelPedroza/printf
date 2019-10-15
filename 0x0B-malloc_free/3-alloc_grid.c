@@ -8,7 +8,7 @@
  *
  * @width: the width of the matrix
  * @height: the hegiht of the matrix
- * REturn: the pointer to the bidi array
+ * Return: the pointer to the bidi array
  */
 
 int **alloc_grid(int width, int height)
@@ -24,7 +24,10 @@ int **alloc_grid(int width, int height)
 
 		num = malloc((width * height) * sizeof(int));
 
-		for (i = 0; i < height; i++)
+		if (num == NULL)
+			return (0);
+
+		for (i = 0; i <= height; i++)
 		{
 
 			*(num + i) = malloc(width * sizeof(int));

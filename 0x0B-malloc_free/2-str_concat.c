@@ -3,9 +3,11 @@
 #include <stdlib.h>
 
 /**
+ * _strcat - concats
  *
- *
- *
+ * @dest: dest
+ * @src: src
+ * Return: char
  */
 char *_strcat(char *dest, char *src)
 {
@@ -22,10 +24,10 @@ char *_strcat(char *dest, char *src)
 }
 
 /**
+ * _strlen - lenght
  *
- *
- *
- *
+ * @s: string
+ * Return: len
  */
 
 int _strlen(char *s)

@@ -2,25 +2,40 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ *
+ *
+ *
+ */
+char *_strcat(char *dest, char *src)
+{
+	int i = 0, n = 0;
+
+	while (dest[i] != '\0')
+		i++;
+	while (src[n] != '\0')
+	{
+		dest[i++] = src[n];
+		n++;
+	}
+	return (dest);
+}
 
 /**
- * _strlen - returns the lenght of a strin
  *
- * @s: the string to evaluate
- * Return: lenght
+ *
+ *
  *
  */
 
 int _strlen(char *s)
 {
-	int i;
+	int len = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
-	{}
-	i--;
-	return (i);
+	while (s[len] != '\0')
+		len++;
+	return (len);
 }
-
 
 /**
  * str_concat - Write a function that concatenates two strings.
@@ -32,39 +47,27 @@ int _strlen(char *s)
 
 char *str_concat(char *s1, char *s2)
 {
-	int i, j, len1, len2;
-	char *sr1, *sr2;
 	char *nstr;
 
-	sr1 = s1;
-	sr2 = s2;
-	len1 = _strlen(s1);
-	len2 = _strlen(s2);
 
-	nstr = malloc((len1 + len2) * sizeof(char) + 1);
-
-	if (nstr == NULL)
-		return (NULL);
 
 	if (s1 == NULL)
 	{
-		sr1 = "";
+		s1 = "";
 
 	}
 	if (s2 == NULL)
 	{
-		sr2 = "";
+		s2 = "";
 	}
 
-	for (i = 0; i <= len1; i++)
-	{
-		nstr[i] = sr1[i];
-	}
+	nstr = malloc((_strlen(s1) + _strlen(s2)) * sizeof(char) + 1);
 
-	for (i = len1 + 1, j = 0 ; j <= len2; i++, j++)
-	{
-		nstr[i] = sr2[j];
-	}
+	if (nstr == NULL)
+		return (NULL);
+
+	_strcat(nstr, s1);
+	_strcat(nstr, s2);
 	return (nstr);
 
 }

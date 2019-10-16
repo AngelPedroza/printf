@@ -39,6 +39,7 @@ char *str_concat(char *s1, char *s2)
 	sr1 = s1;
 	sr2 = s2;
 	len1 = _strlen(s1);
+
 	len2 = _strlen(s2);
 
 	nstr = (char *)malloc((len1 + len2 + 1) * sizeof(char));
@@ -49,11 +50,13 @@ char *str_concat(char *s1, char *s2)
 	if (s1 == NULL)
 	{
 		sr1 = "";
+		len1 = 0;
 
 	}
 	if (s2 == NULL)
 	{
 		sr2 = "";
+		len2 = 0;
 	}
 
 	for (i = 0; i <= len1; i++)
@@ -66,10 +69,5 @@ char *str_concat(char *s1, char *s2)
 		nstr[i] = sr2[j];
 	}
 	return (nstr);
-
-
-	free(nstr);
-
-
 
 }

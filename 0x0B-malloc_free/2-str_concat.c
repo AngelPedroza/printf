@@ -41,18 +41,20 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		return (s2);
+		s1 = "";
+		return (nstr);
 	}
-	else if (s2 == NULL)
+	if (s2 == NULL)
 	{
-		return (s1);
+		s2 = "";
+		return (nstr);
 	}
 	else
 	{
 		nstr = (char *)malloc((len1 + len2 + 1) * sizeof(char));
 
 		if (nstr == NULL)
-			return (0);
+			return (NULL);
 		for (i = 0; i <= len1; i++)
 		{
 			nstr[i] = s1[i];

@@ -17,11 +17,12 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
-	else if (str == '\0')
+	else if (str == "")
 	{
-		return ('\0');
+	        nstr = "";
+		return (nstr);
 	}
 	else
 	{
@@ -30,7 +31,7 @@ char *_strdup(char *str)
 		nstr = malloc(len + 1);
 
 		if (nstr == NULL)
-			return (0);
+			return (NULL);
 		for (i = 0; str[i] != '\0'; i++)
 			nstr[i] = str[i];
 		return (nstr);

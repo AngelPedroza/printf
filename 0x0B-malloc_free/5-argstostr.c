@@ -36,9 +36,10 @@ char *argstostr(int ac, char **av)
 	int i, j, len;
 
 
-	if (ac == 0 || av == NULL)
-		return (0);
-
+	if (ac == 0)
+		return (NULL);
+	else if (av == NULL)
+		return (NULL);
 
 
 	for (i = 0; i < ac ; i++)
@@ -47,7 +48,8 @@ char *argstostr(int ac, char **av)
 	}
 
 	narr = malloc((len + ac) * sizeof(char));
-
+	if (narr == NULL)
+		return (NULL);
 	len = 0;
 	for (i = 0; i < ac; i++)
 	{

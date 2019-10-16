@@ -36,9 +36,8 @@ char *str_concat(char *s1, char *s2)
 	char *sr1, *sr2;
 	char *nstr;
 
-
 	sr1 = s1;
-	sr2 = s2; 
+	sr2 = s2;
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 
@@ -46,7 +45,6 @@ char *str_concat(char *s1, char *s2)
 
 	if (nstr == NULL)
 		return (NULL);
-
 
 	if (s1 == NULL)
 	{

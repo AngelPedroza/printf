@@ -36,8 +36,7 @@ char *str_concat(char *s1, char *s2)
 	char *sr1, *sr2;
 	char *nstr;
 
-	sr1 = s1;
-	sr2 = s2;
+
 	len1 = _strlen(s1);
 
 	len2 = _strlen(s2);
@@ -49,13 +48,13 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		sr1 = "";
+		s1 = "";
 		len1 = 0;
 
 	}
 	if (s2 == NULL)
 	{
-		sr2 = "";
+		s2 = "";
 		len2 = 0;
 	}
 

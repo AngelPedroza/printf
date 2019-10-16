@@ -41,7 +41,19 @@ char *str_concat(char *s1, char *s2)
 	nstr = (char *)malloc((len1 + len2 + 1) * sizeof(char));
 
 	if (nstr == NULL)
-			return (NULL);
+		return (NULL);
+
+
+	if (s1 == NULL)
+	{
+		s1 = "";
+
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+
 	for (i = 0; i <= len1; i++)
 	{
 		nstr[i] = s1[i];
@@ -53,16 +65,6 @@ char *str_concat(char *s1, char *s2)
 	}
 	return (nstr);
 
-	if (s1 == NULL)
-	{
-		s1 = "";
-		return (nstr);
-	}
-	if (s2 == NULL)
-	{
-		s2 = "";
-		return (nstr);
-	}
 
 	free(nstr);
 

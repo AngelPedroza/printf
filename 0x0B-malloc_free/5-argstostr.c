@@ -65,9 +65,7 @@ char *argstostr(int ac, char **av)
 
 	if (narr == NULL)
 		return (NULL);
-
-
-
 	return (narr);
+	free(narr);
 
 }

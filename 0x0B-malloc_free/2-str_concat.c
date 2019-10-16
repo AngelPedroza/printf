@@ -17,7 +17,6 @@ int _strlen(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{}
-	i--;
 	return (i);
 }
 
@@ -41,7 +40,7 @@ char *str_concat(char *s1, char *s2)
 
 	len2 = _strlen(s2);
 
-	nstr = (char *)malloc((len1 + len2 + 1) * sizeof(char));
+	nstr = (char *)malloc((len1 + len2) * sizeof(char) + 1);
 
 	if (nstr == NULL)
 		return (NULL);
@@ -49,13 +48,11 @@ char *str_concat(char *s1, char *s2)
 	if (s1 == NULL)
 	{
 		s1 = "";
-		len1 = 0;
 
 	}
 	if (s2 == NULL)
 	{
 		s2 = "";
-		len2 = 0;
 	}
 
 	for (i = 0; i <= len1; i++)

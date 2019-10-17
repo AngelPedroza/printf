@@ -19,13 +19,13 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	ptr = malloc(nmemb * size);
 
+	if (ptr == NULL)
+		return (NULL);
+
+
 	for (i = 0; ptr[i] != '\0'; i++)
 	{
 		ptr[i] = 0;
-	}
-	if (ptr == NULL)
-	{
-		return (NULL);
 	}
 
 	return (ptr);

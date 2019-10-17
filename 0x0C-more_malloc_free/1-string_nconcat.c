@@ -12,15 +12,16 @@
 unsigned int _strlen(char *s)
 {
 	unsigned int i;
+
 	while (s[i] != 0)
 	{
 		i++;
 	}
-	return(i);
+	return (i);
 }
 
 /**
- * string_nconcat -
+ * string_nconcat - concatenates n chars from one string to another
  *
  * @s1: string 1
  * @s2: string to concatenate
@@ -33,6 +34,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, j, len1;
 	char *str;
+
 	len1 = _strlen(s1);
 
 	if (n > _strlen(s2))

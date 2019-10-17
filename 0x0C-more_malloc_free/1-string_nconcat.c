@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 /**
+ * _strlen - returns the length of a string
  *
- *
- *
- *
+ * @s: the string to eval
+ * Return: length
  */
 
 unsigned int _strlen(char *s)
@@ -20,10 +20,12 @@ unsigned int _strlen(char *s)
 }
 
 /**
+ * string_nconcat -
  *
- *
- *
- *
+ * @s1: string 1
+ * @s2: string to concatenate
+ * @n: number of charsto concat from s2
+ * Return: pointer to new str
  */
 
 

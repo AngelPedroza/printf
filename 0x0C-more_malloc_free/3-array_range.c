@@ -25,11 +25,10 @@ int *array_range(int min, int max)
 	if (ptr == NULL)
 	{
 		return (NULL);
-		exit(0);
 	}
 
-	for (i = min; i <= max; i++)
-		ptr[i] = i;
+	for (i = 0; min <= max; i++)
+		ptr[i] = min++;
 
 	return (ptr);
 }

@@ -27,10 +27,10 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 /**
  * _realloc - reallocates a memory block with malloc & free
  *
- * @ptr:
- * @old_size:
- * @new_size:
- * Return:
+ * @ptr: the actual pointer
+ * @old_size: the actual size
+ * @new_size: the size to be assigned
+ * Return: the pointer with the new size
  */
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
@@ -50,11 +50,11 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (new_size > old_size)
 	{}
 
-	nptr = (unsigned int)malloc(new_size);
-	if  (ptr = NULL)
+	nptr = malloc(new_size);
+	if  (ptr == NULL)
 		return (NULL);
 
-	_memcpy(*nptr, *ptr, old_size);
+	_memcpy(nptr, ptr, old_size);
 
 	free(ptr);
 	return (nptr);

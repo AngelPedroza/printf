@@ -14,12 +14,14 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *sptr;
+	char *nname = name;
+	char *nowner = owner;
 
 	sptr = malloc(1 * sizeof(dog_t));
 	if (sptr == NULL)
-		return NULL;
-	sptr->name = name;
+		return (NULL);
+	sptr->name = nname;
 	sptr->age = age;
-	sptr->owner = owner;
+	sptr->owner = nowner;
 	return (sptr);
 }

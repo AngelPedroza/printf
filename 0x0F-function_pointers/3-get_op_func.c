@@ -28,7 +28,7 @@ int (*get_op_func(char *s))(int, int)
 	if (i == 5)
 	{
 		printf("Error\n");
-		exit (99);
+		exit(99);
 	}
 
 	return (ops[i].f);

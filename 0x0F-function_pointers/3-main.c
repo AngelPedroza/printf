@@ -12,24 +12,28 @@ int main(int argc, char *argv[])
 {
 	int res1, res2, res;
 
-	if (*argv[1] >= '0' && *argv[1] <= '9')
+
+	if (argc == 4)
 	{
-		res1 = atoi(argv[1]);
+
+		if (*argv[1] >= '0' && *argv[1] <= '9')
+		{
+			res1 = atoi(argv[1]);
+		}
+
+		if (*argv[3] >= '0' && *argv[3] <= '9')
+		{
+			res2 = atoi(argv[3]);
+		}
+		res = (*get_op_func(argv[2]))(res1, res2);
+
+		printf("%d\n", res);
+		return (0);
+
 	}
 
-	if (*argv[3] >= '0' && *argv[3] <= '9')
-	{
-		res2 = atoi(argv[3]);
-	}
-	if (argc != 4)
-	{
-		printf("Error\n");
-		exit(98);
-	}
+	printf("Error\n");
+	exit(98);
 
-	res = (*get_op_func(argv[2]))(res1, res2);
-
-	printf("%d\n", res);
-	return (0);
 
 }

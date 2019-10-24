@@ -4,7 +4,7 @@
 
 
 /**
- * main_opcodes - prints the opcodes of its own main fuction
+ * main - prints the opcodes of its own main fuction
  *
  * @argc: argument count
  * @argv: argument vector of chars

@@ -1,1 +1,0 @@
-list of mandatory tasks

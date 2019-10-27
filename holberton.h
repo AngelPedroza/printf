@@ -4,7 +4,7 @@
 #include <stdarg.h>
 
 typedef struct specify {
-	char c;
+	char *c;
 	void (*f)(va_list list);
 }specify;
 

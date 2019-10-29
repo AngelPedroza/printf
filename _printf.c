@@ -13,14 +13,11 @@ int _printf(char *format, ...)
 	int j, i, *count, val_count = 0;
 	char *buffer;
 	va_list valist;
-
 	myforspec percentage[] = {
-		{"c", _printchar}, {"d", printint}, {"i", printint},
-		{"o", printoctal}, {"s", printstr}, {"x", printhexa},
-		{"X", printhexa}, {"b", printbin}, {"u", printunsigned},
-		{"%", PPS}, {NULL, NULL}
+		{"c", _printchar}, {"d", printint}, {"i", printint}, {"o", printoctal},
+		{"s", printstr}, {"x", printhexa}, {"X", printhexa}, {"b", printbin},
+		{"u", printunsigned}, {"%", PPS}, {NULL, NULL}
 	};
-
 	va_start(valist, format);
 	buffer = malloc(1024);
 	if (buffer == NULL)
@@ -95,8 +92,8 @@ int _strlen(char *str)
  */
 char *convert(unsigned int num, int base)
 {
-	static char Representation[] = "0123456789ABCDEF";
-	static char buffer[50];
+	char Representation[] = "0123456789ABCDEF";
+	char buffer[50];
 	char *ptr;
 
 	ptr = &buffer[49];

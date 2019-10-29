@@ -44,7 +44,6 @@ int printstr(va_list valist, char *buffer, int *count)
 /**
  * PPS - Print a % if you have %%.
  *
- * @valist: My list of arguments.
  * @buffer: My buffer is a malloc declaration that I will use for print all.
  * @count: This is the parameter to count the position that should put
  * in the buffer.

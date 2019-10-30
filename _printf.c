@@ -16,7 +16,7 @@ int _printf(char *format, ...)
 	myforspec percentage[] = {
 		{"c", _printchar}, {"d", printint}, {"i", printint}, {"o", printoctal},
 		{"s", printstr}, {"x", printhexa}, {"X", printhexa}, {"b", printbin},
-		{"u", printunsigned}, {"%", PPS}, {NULL, NULL}
+		{"u", printunsigned}, {"%", PPS}, {"S", capitalize}, {NULL, NULL}
 	};
 	va_start(valist, format);
 	buffer = malloc(1024);

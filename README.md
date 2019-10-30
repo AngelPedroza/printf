@@ -2,15 +2,15 @@
 .Dd 10/28/19               \" DATE
 .Dt man_printf      \" Program name and manual section number
 .Os AngelP DavidO
-.Sh NAME                 \" Section Header - required - don't modify
+.SH NAME                 \" Section Header - required - don't modify
 .Nm _printf
 .Nd This line parsed for whatis database.
-.Sh SYNOPSIS
+.SH SYNOPSIS
 #include "holberton.h"
 .Pp
 .Nm
 .Arg (const char *format, ...)
-.Sh DESCRIPTION          \" Section Header - required - don't modify
+.SH DESCRIPTION          \" Section Header - required - don't modify
 The 
 .Nm 
 program produce outputs according to specific formats. It writes the output under a control of one or more format specifiers that tell how subsequent arguments are converted for output    
@@ -36,7 +36,7 @@ converts an input integer to a percentage and returs the substring
 
 .El                      \" Ends the list
 .Pp \"
-.Sh FLAGS
+.SH FLAGS
 The format string is a character string, beginning and ending in its initial shift state, if any.  The format string is composed of zero or more directives: ordinary  characters
 (not  %),  which  are copied unchanged to the output stream; and conversion specifications, each of which results in fetching zero or more subsequent arguments.  Each conversion
 specification is introduced by the character %, and ends with a conversion specifier.  In between there may be (in this order) zero or more  flags,  an  optional  minimum  field
@@ -57,12 +57,12 @@ Description of -b flag
 .\" .It Ev ENV_VAR_2
 .\" Description of ENV_VAR_2
 .\" .El
-.Sh OUTPUT
+.SH OUTPUT
 Upon successful operation,
 .Nm
 print returns all the characters except for the null character. 
 
-.Sh SEE ALSO
+.SH SEE ALSO
 .\" List links in ascending order by section, alphabetically within a section.
 .\" Please do not reference files that do not exist without filing a bug report
 .Xr a printf ,

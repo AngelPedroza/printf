@@ -32,4 +32,5 @@ int printoctal(va_list valist, char *buffer, int *i);
 int printbin(va_list valist, char *buffer, int *i);
 int printunsigned(va_list valist, char *buffer, int *count);
 int PPS(char *buffer, int *count);
+int capitalize(va_list valist, char *buffer, int *count);
 #endif

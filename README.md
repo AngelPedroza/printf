@@ -1,8 +1,8 @@
 .TH Man 1 "28/10/19" "1.0" "Holberton _printf Project Man Page"
-.Dd 10/28/19               \" DATE
-.Dt man_printf      \" Program name and manual section number
+.Dd 10/28/19
+.Dt man_printf
 .Os AngelP DavidO
-.SH NAME                 \" Section Header - required - don't modify
+.SH NAME
 .Nm _printf
 .Nd This line parsed for whatis database.
 .SH SYNOPSIS
